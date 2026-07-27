@@ -1,0 +1,14 @@
+# dependencies / build
+/node_modules
+/.next
+/out
+.DS_Store
+*.log
+
+# env
+.env.local
+.env*.local
+
+# CMS-managed uploads are hosted on the PHP server in production
+# (NEXT_PUBLIC_ASSET_HOST). Kept locally for dev; not committed / deployed to Vercel.
+/public/uploads
