@@ -126,7 +126,7 @@ export function LineArtPort() {
   const GOLD = '#f0c030', QUAY = 900;
 
   return (
-    <Band bg="bg-ink-950" title="How cargo moves through our ports" href="/about/port-operations"
+    <Band bg="bg-ink-950" title="How cargo moves through our ports" href="/about/cargo-handling"
       titleClass="text-white" linkClass="text-slate-400 hover:text-accent-300" reduced={reducedMotion} viewBox="0 12 1440 322">
       {/* waterline + quay wall (plain line-art, no fill / no waves) */}
       <motion.line variants={draw} {...S} x1={QUAY} y1={WL} x2="1440" y2={WL} />
@@ -191,7 +191,7 @@ export function LineArtFleet() {
   const PVX = 530, PVY = GROUND - 40;
 
   return (
-    <Band bg="bg-accent-400" title="From the mines to the market" href="/about/trading"
+    <Band bg="bg-accent-400" title="From the mines to the market" href="/about/bulk-trading"
       titleClass="text-ink-950" linkClass="text-ink-900 hover:text-ink-950" reduced={reducedMotion} viewBox="0 116 1440 218">
       {/* waterline + quay wall (plain line-art, no fill / no waves) */}
       <motion.line variants={draw} {...S} x1={QUAY} y1={WL} x2="1440" y2={WL} />

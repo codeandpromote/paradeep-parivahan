@@ -82,7 +82,7 @@ export default async function InvestorsPage({
       <PageHero
         title={TITLES[leaf] ?? 'Investor Documents'}
         image={invHero(leaf)}
-        crumbs={[{ label: 'Investors', href: '/investors' }, { label: TITLES[leaf] ?? leaf }]}
+        crumbs={[{ label: 'Investor Relations', href: '/investors' }, { label: TITLES[leaf] ?? leaf }]}
       />
       <div className="mx-auto max-w-4xl px-4 py-16">
         <DocumentTable docs={docs} />
@@ -93,7 +93,7 @@ export default async function InvestorsPage({
 
 // ---------- Section landing (card grid of every investor page) ----------
 function InvestorLanding() {
-  const investors = NAV.find((n) => n.label === 'Investors');
+  const investors = NAV.find((n) => n.label === 'Investor Relations');
   type FlatItem = { label: string; href?: string; group?: string };
   const flat: FlatItem[] = (investors?.children ?? []).flatMap((c): FlatItem[] =>
     c.children
@@ -106,7 +106,7 @@ function InvestorLanding() {
         title="Investor Relations"
         subtitle="Financial results, regulatory filings, policies and disclosures under SEBI (LODR)."
         image={MEDIA_IMG.portCityNight}
-        crumbs={[{ label: 'Investors' }]}
+        crumbs={[{ label: 'Investor Relations' }]}
       />
       <div className="mx-auto max-w-7xl px-4 py-16">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -171,7 +171,7 @@ function Regulation46() {
       <PageHero
         title="Disclosures under Regulation 46 of SEBI (LODR)"
         image={MEDIA_IMG.industrialPlantDusk}
-        crumbs={[{ label: 'Investors', href: '/investors' }, { label: 'Regulation 46' }]}
+        crumbs={[{ label: 'Investor Relations', href: '/investors' }, { label: 'Regulation 46' }]}
       />
       <div className="mx-auto max-w-4xl px-6 py-16">
         <div className="overflow-x-auto rounded-xl border border-white/10 bg-ink-900">
@@ -210,7 +210,7 @@ function GrievancePage({ kind }: { kind: 'rti' | 'kmp' }) {
         title={isRti ? 'RTI — Registrar & Share Transfer Agent' : 'KMP / Compliance Officer Details'}
         image={MEDIA_IMG.aerialIndustrial}
         crumbs={[
-          { label: 'Investors', href: '/investors' },
+          { label: 'Investor Relations', href: '/investors' },
           { label: 'Grievance Redressal' },
           { label: isRti ? 'RTI' : 'KMP Details' },
         ]}

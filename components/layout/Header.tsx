@@ -99,7 +99,7 @@ export default function Header() {
 
 function TopLevel({ node }: { node: NavNode }) {
   const hasChildren = !!node.children?.length;
-  const isInvestors = node.label === 'Investors';
+  const isInvestors = node.label === 'Investor Relations';
 
   if (!hasChildren) {
     return (
@@ -120,7 +120,7 @@ function TopLevel({ node }: { node: NavNode }) {
           href="/investors"
           className="inline-flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium text-slate-200 transition hover:text-accent-300"
         >
-          <span className="whitespace-nowrap">Investors</span>
+          <span className="whitespace-nowrap">Investor Relations</span>
           <ChevronDown className="h-4 w-4 opacity-50 transition group-hover:rotate-180" aria-hidden />
         </Link>
 

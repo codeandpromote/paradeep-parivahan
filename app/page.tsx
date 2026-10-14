@@ -1,6 +1,5 @@
 import Hero from '@/components/home/Hero';
 import StatsCounter from '@/components/home/StatsCounter';
-import ServicesGrid from '@/components/home/ServicesGrid';
 import Capabilities from '@/components/home/Capabilities';
 import { LineArtPort, LineArtFleet } from '@/components/home/LineArtSections';
 import MissionVision from '@/components/home/MissionVision';
@@ -15,7 +14,6 @@ export default function HomePage() {
     <>
       <Hero />
       <StatsCounter />
-      <ServicesGrid />
       <Capabilities />
       <LineArtPort />
       <MissionVision />

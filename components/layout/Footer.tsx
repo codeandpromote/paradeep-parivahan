@@ -4,7 +4,6 @@ import { MapPin, Phone, Mail, Facebook, Instagram } from 'lucide-react';
 const QUICK = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
-  { label: 'Domestic Projects', href: '/projects/domestic' },
   { label: 'Client List', href: '/clients' },
   { label: 'Our Team', href: '/about/team' },
 ];
@@ -50,7 +49,7 @@ export default function Footer() {
         </div>
 
         <FooterCol title="Quick Links" links={QUICK} />
-        <FooterCol title="Investors" links={INVESTOR} />
+        <FooterCol title="Investor Relations" links={INVESTOR} />
 
         <div>
           <h3 className="text-sm font-semibold uppercase tracking-wide text-white">Address</h3>

@@ -116,7 +116,7 @@ export default function VideoHero() {
           {/* Eyebrow */}
           <div className="hero-reveal mb-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] font-semibold uppercase tracking-[0.15em] text-accent-400 sm:mb-6 sm:text-xs sm:tracking-[0.28em]">
             <span className="h-px w-6 bg-accent-500 sm:w-10" />
-            Est. 2000 · Ports · Logistics · Trading
+            EST. 2000 · MARITIME · LOGISTICS · TRADING
           </div>
 
           {/* Headline — words flow & wrap naturally; each masked for the reveal */}

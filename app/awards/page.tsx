@@ -9,7 +9,12 @@ export default async function AwardsPage() {
   const awards = await getAwards();
   return (
     <>
-      <PageHero title="Awards & Recognition" image={MEDIA_IMG.cargoShip} crumbs={[{ label: 'Awards' }]} />
+      <PageHero
+        title="Awards & Recognition"
+        subtitle="Two decades of trust — recognised by industry bodies, ports and government agencies for our contribution to India&rsquo;s logistics story."
+        image={MEDIA_IMG.cargoShip}
+        crumbs={[{ label: 'Awards' }]}
+      />
       <AwardsGrid awards={awards} />
     </>
   );

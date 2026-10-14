@@ -21,23 +21,14 @@ export const NAV: NavNode[] = [
       { label: 'Our Team', href: '/about/team' },
       { label: 'Our Green Pledge', href: '/about/green-pledge' },
       { label: 'Group of Companies', href: '/about/group-companies' },
-      { label: 'Major Activities', href: '/about/activities' },
-      { label: 'Stevedoring & Port Operations', href: '/about/port-operations' },
-      { label: 'Dredging & Reclamation', href: '/about/dredging' },
-      { label: 'Trading — Global Sourcing', href: '/about/trading' },
-      { label: 'Logistics & Transportation', href: '/about/logistics' },
-      { label: 'Infrastructure & Ready-Mix Concrete', href: '/about/infrastructure-rmc' },
-      { label: 'Specialized Fabrication', href: '/about/fabrication' },
+      { label: 'Cargo Handling', href: '/about/cargo-handling' },
+      { label: 'Bulk Trading', href: '/about/bulk-trading' },
+      { label: 'Shore-Based Assets', href: '/about/shore-based-assets' },
       { label: 'Marine & Defence Infrastructure', href: '/about/marine-defence' },
     ],
   },
   {
-    label: 'Projects',
-    href: '/projects',
-    children: [{ label: 'Domestic Projects', href: '/projects/domestic' }],
-  },
-  {
-    label: 'Investors',
+    label: 'Investor Relations',
     href: '/investors',
     children: [
       { label: 'Annual Reports', href: '/investors/annual-reports' },
@@ -97,9 +88,6 @@ export const NAV: NavNode[] = [
     children: [
       { label: 'Client List', href: '/clients' },
       { label: 'Presence', href: '/clients/presence' },
-      { label: 'Sub Contract', href: '/clients/sub-contract' },
-      { label: 'Job Work', href: '/clients/job-work' },
-      { label: 'Party Name', href: '/clients/party-name' },
     ],
   },
   { label: 'Gallery', href: '/gallery' },
@@ -116,8 +104,8 @@ export const NAV: NavNode[] = [
 ];
 
 /**
- * Curated column layout for the Investors desktop mega-menu — grouped by theme
- * so the 20+ items read cleanly instead of as a flat jumble.
+ * Curated column layout for the Investor Relations desktop mega-menu — grouped
+ * by theme so the 20+ items read cleanly instead of as a flat jumble.
  */
 export interface MegaColumn {
   heading: string;

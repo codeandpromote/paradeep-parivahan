@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ChevronRight, Ship } from 'lucide-react';
+import { ChevronRight, Truck } from 'lucide-react';
 import { IMAGES } from '@/lib/images';
 import { EASE_OUT } from '@/lib/animations';
 import { useAccessibility } from '@/context/AccessibilityContext';
@@ -18,8 +18,8 @@ export interface Crumb {
  *   - image ken-burns (slow zoom)
  *   - breadcrumb + title fade-up
  *   - gold underline that draws in beneath the title
- *   - a "shipping route" line at the bottom whose dashes flow while a small
- *     vessel glides along it — a subtle brand-wide nod to movement/logistics.
+ *   - a "route" line at the bottom whose dashes flow while a small truck
+ *     glides along it — a subtle brand-wide nod to movement/logistics.
  *
  * Client feedback: the photo should read clearly. So the image sits at high
  * opacity and the darkening is intentionally light — a bottom-anchored
@@ -122,7 +122,7 @@ export default function PageHero({
         )}
       </div>
 
-      {/* shipping-route motif */}
+      {/* route motif — truck traversing a dashed road line */}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-12" aria-hidden>
         <svg className="absolute inset-0 h-full w-full" viewBox="0 0 1440 48" preserveAspectRatio="none">
           <motion.line
@@ -140,7 +140,7 @@ export default function PageHero({
             animate={{ left: '103%' }}
             transition={{ duration: 10, repeat: Infinity, ease: 'linear' }}
           >
-            <Ship className="h-5 w-5" />
+            <Truck className="h-5 w-5" />
           </motion.div>
         )}
       </div>
